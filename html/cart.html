@@ -1,100 +1,41 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keranjang Belanja - MAHA PARFUME</title>
-    <link rel="stylesheet" href="../css/product.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keranjang - MAHA PARFUME</title>
+  <link rel="stylesheet" href="/css/cart.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="brand">
-            <h1 class="logo">MHA</h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="../html/homepage.html">Home</a></li>
-            <li><a href="../html/aboutweb2.html">About</a></li>
-            <li><a href="../html/teams.html">Teams</a></li>
-            <li><a href="../html/products.html">Products</a></li>
-            <li><a href="../html/contact.html">Contact</a></li>
-            <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
-           
-        </ul>
-        <button class="hamburger">☰</button>
-    </nav>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <h1 style="text-align: center; margin-top: 20px;">Keranjang Belanja</h1>
-        <div id="cart-items" class="cart-container">
-            <!-- Item keranjang akan ditampilkan di sini -->
-        </div>       
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MAHA PARFUME</div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../html/homepage.html">Home</a></li>
+      <li><a href="../html/products.html">Products</a></li>
+      <li><a href="#">Collections</a></li>
+      <li><a href="../html/aboutweb2.html">About</a></li>
+      <li><a href="../html/contact.html">Contact</a></li>
+      <li><a href="../html/teams.html">Teams</a></li>
+    </ul>
+  </nav>
+
+  <!-- Keranjang -->
+  <main class="cart-container">
+    <h2>Keranjang Belanja</h2>
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <p><strong>Total:</strong> Rp <span id="cart-total">0</span></p>
+      <button onclick="checkout()">Checkout</button>
     </div>
-    
-    <div class="checkout-actions">
-        <div class="select-all">
-            <label class="mha-checkbox">
-                <input type="checkbox" id="select-all">
-                <div class="mha-checkbox-box"></div>
-            </label>
-            <button id="select-all-btn">Pilih Semua (0)</button>
-            <button class="delete-btn">Hapus</button>
-        </div>
+  </main>
 
-        <div class="checkout-summary">
-            <div class="total-price">
-                <span>Total (0 produk):</span>
-                <strong id="total-amount">Rp 0</strong>
-            </div>
-            <button id="checkout-btn" disabled>Checkout</button>
-        </div>
-        
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-brand">
-                <h2>MAHA PARFUME</h2>
-                <p>Copyright © 2020 Landify UI Kit. All rights reserved.</p>
-                <div class="social-icons">
-                    <span>📸</span>
-                    <span>⚽</span>
-                    <span>🐦</span>
-                    <span>🎥</span>
-                </div>
-            </div>
-            <div class="footer-links">
-                <div>
-                    <h3>Company</h3>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Support</h3>
-                    <ul>
-                        <li><a href="#">Help center</a></li>
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="#">Legal</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Status</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="subscribe">
-                <h3>Stay up to date</h3>
-                <input type="email" placeholder="Your email address">
-                <button>→</button>
-            </div>
-        </div>
-    </footer>
+  <!-- Taruh di bagian paling bawah sebelum </body> -->
+<script src="/js/navbar.js"></script> <!-- ini untuk hamburger menu -->
 
-    <!-- Hubungkan JavaScript -->
-    <script src="../js/cart.js"></script>
-    <script src="../js/checkout.js"></script>
+  <script src="/js/cart.js"></script>
+
 </body>
 </html>

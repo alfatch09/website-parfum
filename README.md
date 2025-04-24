@@ -1,2 +1,0 @@
-# website-parfum
-mahaparfum
